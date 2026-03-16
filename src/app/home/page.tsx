@@ -1,18 +1,26 @@
-import Image from "next/image";
+import { Header } from "@/components/Header";
+import { AcademicProcess } from "@/components/AcademicProcess";
+import { NotificationsSidebar } from "@/components/NotificationsSidebar";
+import { RecommendedSteps } from "@/components/RecommendedSteps";
 
-export default function Home() {
+export default function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <h1>Trang chủ nè</h1>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+
+      <main className="container mx-auto px-6 py-8">
+        <div className="grid gap-6 lg:grid-cols-[1fr_380px]">
+          {/* Main Content */}
+          <div className="space-y-6">
+            <AcademicProcess />
+            <RecommendedSteps />
+          </div>
+
+          {/* Sidebar */}
+          <aside className="lg:sticky lg:top-24 lg:h-fit">
+            <NotificationsSidebar />
+          </aside>
+        </div>
       </main>
     </div>
   );

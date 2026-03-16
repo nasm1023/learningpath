@@ -1,10 +1,12 @@
+import "./globals.css";
+
 export default function RootLayout({ children }: any) {
   return (
     <html>
       <body>
-        <header>MAIN HEADER</header>
+        <header></header>
         {children}
-        <footer>MAIN FOOTER</footer>
+        <footer></footer>
       </body>
     </html>
   );
