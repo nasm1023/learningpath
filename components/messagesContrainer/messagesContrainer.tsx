@@ -11,7 +11,7 @@ export function MessagesContrainer({ messages }: MessagesProps) {
                 const isBot = index % 2 === 0
                 return (
                     <>
-                        <div key={index} className={`${isBot ? "text-right" : "text-left"} overflow-x-clip`} >{message}</div>
+                        <div key={index} className={`${isBot ? "text-right" : "text-left"} overflow-x-clip py-4`} >{message}</div>
                     </>
                 )
             })}

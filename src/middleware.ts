@@ -8,10 +8,14 @@ export function middleware(request: NextRequest) {
     // if (!token && pathname.startsWith("/home")) {
     //     return NextResponse.redirect(new URL("/login", request.url));
     // }
-
+    if (request.nextUrl.pathname === '/') {
+        // Điều hướng (redirect) sang "/home"
+        return NextResponse.redirect(new URL('/home', request.url))
+    }
     return NextResponse.next();
 }
 
 export const config = {
-    matcher: ["/home(.*)"],
+    matcher: ["/"],
+    // matcher: ["/home(.*)"],
 };

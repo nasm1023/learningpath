@@ -24,11 +24,31 @@ import { MessagesContrainer } from "@/components/messagesContrainer/messagesCont
 export default function Page() {
   const messages = useMessages((state) => state.messages)
   const { addMessage, clearMessages } = useMessages()
-  // useEffect(() => {
-  //   console.log("Messages")
-  //   addMessage("Welcome to the Data Fetching page!")
-  //   addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
-  // }, [])
+  useEffect(() => {
+    console.log("Messages")
+    addMessage("Welcome to the Data Fetching page!")
+    addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
+
+    addMessage("Welcome to the Data Fetching page!")
+    addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
+
+
+    addMessage("Welcome to the Data Fetching page!")
+    addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
+
+
+    addMessage("Welcome to the Data Fetching page!")
+    addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
+
+
+    addMessage("Welcome to the Data Fetching page!")
+    addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
+
+
+    addMessage("Welcome to the Data Fetching page!")
+    addMessage("Wdsaddsaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddd")
+
+  }, [])
   return (
     <SidebarProvider>
       <AppSidebar />
